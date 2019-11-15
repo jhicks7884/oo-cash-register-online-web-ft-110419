@@ -26,9 +26,9 @@ class CashRegister
     emp_dis = (discount/100.0)
     @total = @total - (@total*emp_dis)
     if @discount == 0
-      p "There is no discount to apply."
+      put "There is no discount to apply."
     else
-      p "After the discount, the total comes to $#{@total.to_i}."
+      put "After the discount, the total comes to $#{@total.to_i}."
     end
   end
 
